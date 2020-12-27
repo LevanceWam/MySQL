@@ -1,0 +1,49 @@
+Series of notes that we are going to be taking 
+
+How to Retrieve data from a table
+
+One thing we need to understand that is that if our tables are not bold 
+that means that they are not up for querying 
+
+So we are going to use the sql_store dataBase 
+
+to do this we need to use the keyword  USE 
+SQL is not a case sensitive language but it is 
+best pratice to have the key words capitalize
+we have to terminate it at the end with a ; or else we are going to get an error
+
+we can also select an database by double clicking it 
+
+we are going to write a query to retrieve all of the customers
+this is a job for the select statement 
+
+SELECT statement:
+-- in front of it we Specify the columns we want to retrieve
+-- we use * for all columns
+
+FROM clause:
+-- this is used to pick the table we want to query
+
+So the select statement has 2 clauses the select clause and the from clause 
+but there are other clauses we can use to filter and sort data
+
+WHERE clause:
+-- this clause can filter the result
+
+ORDER BY:
+-- we can sort the data using this clause 
+-- this is where we specify the column that we want the results on 
+
+** this is something that we need to take away from this 
+These 3 clauses are optional
+Just know that in the real word that we are always using them and 
+that the order of the clauses are very important
+
+We can not change the order of this because this will give us a syntax error
+
+Also as a heads up all of the white spaces and tabs are ingored when we are executing sql statements
+so we can have all of our clauses on one line and it won't cause a 
+problem
+
+But as the query gets more complex it is better to 
+put each clause on a new line 
