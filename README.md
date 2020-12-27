@@ -68,3 +68,7 @@ When we open up the app we should see a connection and if we don't we need to cr
 5. The port is the default port that we use and the username is the name of the admin.
 6. The password is the one we set during installation.
 7. Test the connection.
+
+**Important:**
+
+If we so happen to forget the password for our root and we can't get in, or set it a longtime ago. Follow this link to reset MySQL password: [Watch this video](https://www.youtube.com/watch?v=OEXPj8iYP3c)
