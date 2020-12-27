@@ -72,3 +72,23 @@ When we open up the app we should see a connection and if we don't we need to cr
 **Important:**
 
 If we so happen to forget the password for our root and we can't get in, or set it a longtime ago. Follow this link to reset MySQL password: [Watch this video](https://www.youtube.com/watch?v=OEXPj8iYP3c)
+
+---
+## Table of Contents
+
+> A directory for certian skills and concepts.
+
+* [Retrieving Data From a Single Table]()
+* [Retrieving Data From Multiple Table]()
+* [Inserting, Updating, and Deleting Data]()
+* [Summarizing Data]()
+* [Writing Complex Query]()
+* [Essential MySQL Functions]()
+* [Views]()
+* [Stored Procedures]()
+* [Triggers and Events]()
+* [Transactions and Concurrency]()
+* [Data Types]()
+* [Designing Databases]()
+* [Indexing for High Performance]()
+* [Securing Database]()
