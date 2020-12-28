@@ -1,0 +1,44 @@
+This is the notes for Where Clause
+
+The where clause is used to filter data
+so if we wanted to get the customers with points greater than 3000
+we can accomplish that
+
+When we execute this query the query execution engine 
+in MySQL is going to iterate over all the customers in the customers table 
+for each customer it is going to evulate this condition 
+if it's true we are going to return the customer in the result set
+
+notice that we used the > operator to accomplish this task 
+Here are the other operators we can use:
+>
+>=
+<
+<=
+=
+!= and <> are the same these are not equal
+
+lets try another example lets get all of the customers that are from VA
+
+We can use the comparsion operators with date values also
+Note when we are comparing datas we have to use '' to represent the 
+data values even though they aren't strings 
+
+But in the SQL language we should enclose dates with quotes
+This is the default format for dates in SQL 
+year/month/date the year has to be 4 digits, month 2 and day is also 2
+
+Time for a exercise:
+We need to write a query to get the orders that are placed this year
+so from the orders table figure out how to accomplish this 
+
+Solution notes:
+
+We got the query right but here are some things to take in consideration
+
+we HAVE to write out the date for the query to execute just writting one part 
+of the date is going to give us a error
+
+Another thing wrong with the implementation is that 
+we hard coded the current year if the year changes this code is incorrect
+later we are going to learn how to deal with this 
