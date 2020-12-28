@@ -1,0 +1,46 @@
+This is the notes for AND OR NOT operators 
+
+We are going to look at combining multiple search conditions
+when we are filtering data.
+
+AND Operator:
+Lets say we want to get all of the customers born 
+after jan 1, 1990 who also have more than 1000 points 
+This is where we can use the AND operator
+we can use this to write another condition to filter by
+
+When we use this operator both of these conditions should be true 
+
+OR operator:
+Contrast to the AND operator if at least one of the conditions is
+true, that row is returned in the result set
+
+Now lets combine OR and AND operator 
+to find customers who birthdate before jan 1, 1990 who also have more than 1000 points
+and live in virginia
+
+When we are combining multiple logical operators you need to be 
+aware of the order of the operators 
+just like order of operations in math we have a similar concept for these operators
+
+The AND operator is always evavulated first so when this 
+query is executed the execution engine first evalutes the condition
+with AND first 
+
+we can alway change the order using () 
+
+NOT operator:
+we use this to negate a condition
+so we are going to prefix the query we had earlier and 
+this query is going to return the customers opposite of the condition
+
+to simply the query with out the use of the NOT operator
+we can change the current operators to the opposite version 
+so > becomes < and so on.
+
+Exercise:
+From the order_item table, get the items for order number 6
+where the total price is greater than 30
+
+solution notes:
+To get the total price we need to multiply the quantity by the price 
