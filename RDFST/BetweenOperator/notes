@@ -1,0 +1,11 @@
+Notes for Between Operator
+
+Lets say we want to get the customers that have more than a 1000 and less than 3000 points
+normally we can use the comparsion operator and but there is an easier way
+
+BETWEEN Operator:
+whenever we are comparing an attribute with a range o fvalues 
+we can use the between operator
+
+Exercise:
+Return the customers born between 1/1/1990 and 1/1/2000
