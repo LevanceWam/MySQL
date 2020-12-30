@@ -1,0 +1,17 @@
+This is the notes for NULL Operator
+
+We are going to look into finding records that are 
+missing a attribute
+
+So for example if we select all of the customers in the database 
+one customer doesnt have a phone number and it has null in its place 
+
+NULL means the absence of a value 
+Lets say we want to search for the customers that dont have a phone 
+and we would want to send a email to them that they are missing a phone in the system
+
+This is where we would use the IS NULL Operator
+we can also use NOT to get people with a phone 
+
+Exercise: 
+-- Get the orders that are not shipped
