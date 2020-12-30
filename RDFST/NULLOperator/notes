@@ -15,3 +15,6 @@ we can also use NOT to get people with a phone
 
 Exercise: 
 -- Get the orders that are not shipped
+SELECT *
+FROM orders
+WHERE shipped_date IS NULL;
