@@ -78,7 +78,7 @@ If we so happen to forget the password for our root and we can't get in, or set 
 
 > A directory for certian skills and concepts.
 
-* [Retrieving Data From a Single Table]()
+* [Retrieving Data From a Single Table](https://github.com/LevanceWam/MySQL/tree/main/RDFST)
 * [Retrieving Data From Multiple Table]()
 * [Inserting, Updating, and Deleting Data]()
 * [Summarizing Data]()

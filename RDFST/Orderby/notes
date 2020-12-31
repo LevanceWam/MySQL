@@ -12,7 +12,7 @@ In relational databases every table should have a primary key column
 and the values in that column should uniquely identify the records in that table
 
 ORDER BY:
-to sort a table by another column we would use the clause 
+to sort a table by another column we would use this clause 
 so if we wanted to sort the table by the first name 
 Now we can see that the results are not sorted by the ID 
 but by alphabetical acesnding order to do the reverse

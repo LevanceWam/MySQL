@@ -4,7 +4,7 @@ Lets say we want to get the customers that have more than a 1000 and less than 3
 normally we can use the comparsion operator and but there is an easier way
 
 BETWEEN Operator:
-whenever we are comparing an attribute with a range o fvalues 
+whenever we are comparing an attribute with a range of values 
 we can use the between operator
 
 Exercise:

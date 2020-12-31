@@ -19,7 +19,7 @@ FROM customers
 WHERE birth_date > '1990-01-01' OR 
       (points > 1000 AND state = 'VA');
 
--- Using the not operator we are negating this condition and 
+-- Using the not operator we are negating this condition 
 -- getting the opposite of what we are looking for 
 SELECT *
 FROM customers
