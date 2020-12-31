@@ -60,8 +60,8 @@ from the customer table ans this helps us remove the dups
 
 
 Exercise:
-we need to write a queryt that is going to return all of the products
-then we are going ti want to see 3 columns 
+we need to write a query that is going to return all of the products
+then we are going to want to see 3 columns 
 the name, unit price and a unit price with a arithmetic expression * 1.1
 
 Solution notes:
@@ -70,4 +70,4 @@ Need to be careful with the wording of the exercise
 it code have implied to use the * next to SELECT to get all of the 
 product but that not the case 
 
-A we need to do is to select the columns that we wanted from products and that is 
+All we need to do is to select the columns that we wanted from products and that is 
