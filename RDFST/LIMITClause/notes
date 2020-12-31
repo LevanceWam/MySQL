@@ -1,0 +1,42 @@
+This is the notes for LIMIT clause 
+
+We are going to look into limiting the amount 
+of records we get back from the query
+
+So normally when we execute a query like selecting all of the 
+customers we get all of the customers
+But what if we only wanted to get lets say 3 or 5
+this is where we can use the LIMIT clause
+
+LIMIT Clause:
+under the from clause 
+we add LIMIT and the number we wish to set
+if the number goes over the amount of records that the query can produce
+it will show the ones that we have 
+
+next to the clause we can pass a offset this is good if we 
+want to paginate the data
+so if we had a site that allowed us to see the customers on each page 
+and on each page will have 3 customers 
+page 1 will have 1 - 3 and page 2: 2- 6 and etc
+
+lets try to get customers for page 3
+so we add a number in front of the the number of records we want returned
+this is a offset this tells MySQL to skip a number of records 
+
+Exercise: 
+Get the top 3 loyal customers 
+These customers have the most points 
+
+Important Note:
+The LIMIT clause should always come at the end
+
+The order of our clauses matter and if we change the order MySQL is going to yell at us 
+So we have to pay attention to the order 
+
+Order:
+SELECT
+FROM 
+WHERE 
+ORDER BY
+LIMIT

@@ -1,0 +1,73 @@
+This is the notes for SelectClause 
+
+Looking at the select clause in more detail
+Remeber we can choose the database we are querying by double 
+clicking it so we can remove the USE at the top as well as the WHERE and ORDER BY 
+
+What can we dpo with the select clause 
+
+Now remember that the * means return all of the columns 
+or we can pick the ones we want 
+
+this is helpful in some situations because if we have a big table 
+with lots of columns and millions of records
+Bring back all of that data is going to put a lot
+of pressure on the database server 
+in this case MYSQL as well as the network
+
+this is why we explicitly call the columns we want to get 
+depending on how we place the columnns next to the select is how it is going to print at the bottom
+
+we are going to add another column called points
+
+Now lets say we want to take the points nd put them in a 
+mathematical format to calculate the discount we give to each customer 
+
+we can use arithmetic expressions to change the value of the points
+this creates a new column with the calculated value
+
+in this arithmetic expression we need to understand the order of operators
+this is based on order of operations in math 
+
+we can give this new column a alias by using the keyword AS 
+currently we have a underscore seperating it but if we wanted to 
+use a space instead we have to surround it using "" 
+
+
+now we are going to do something 
+
+we are going to select the state column from customers
+in this db we do not have any dups
+
+we are going to create one so in the customer table we are going to 
+change the first customer from MA to VA 
+
+now in the bottom right corner we are going to see the 
+apply and revert button 
+we are going to hit apply
+
+This pulls up a dialog box to review the changes 
+we are going to apply it
+
+Here's something cool 
+lets say that we want to get a unique list of results
+of results?
+
+This is where we would use the DISTINCT keyword
+
+with the current query well retrieve a unqiue list of states
+from the customer table ans this helps us remove the dups 
+
+
+Exercise:
+we need to write a queryt that is going to return all of the products
+then we are going ti want to see 3 columns 
+the name, unit price and a unit price with a arithmetic expression * 1.1
+
+Solution notes:
+
+Need to be careful with the wording of the exercise 
+it code have implied to use the * next to SELECT to get all of the 
+product but that not the case 
+
+A we need to do is to select the columns that we wanted from products and that is 

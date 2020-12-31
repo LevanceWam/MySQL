@@ -1,0 +1,26 @@
+This is the notes for IN operator
+
+Starting with an Example:
+
+Lets say we wanted to get the customers that were located in VA FL and GA
+one way to do this is to use the OR operator 
+but the thing with that is it can be a little verbose 
+as it is used to combine multiple conditions 
+
+to make this shorter we can use the in operator
+the query that is written now is equivalent to the
+or operators we where using to get the same result 
+
+Also if we wanted to get the customers that are not in this state all we have to do is 
+use the NOT operator
+
+We use the IN operator when we want to compare
+an attribute to a list of values 
+
+Exercise:
+
+Write a query to get products where the quantity in stock 
+equals one of these values:
+49, 38, 72
+
+Solution notes 

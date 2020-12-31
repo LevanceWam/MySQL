@@ -1,0 +1,49 @@
+This is the notes for REGEXP Operator
+
+Lets say that we wanted to sarch the customers 
+who have the word field in their last name 
+
+We could use the LIKE operator here and be fine
+but lets explore another option
+
+REGEXP operator:
+this stands for regular expression
+regular expressions are extremely powerful
+when it comes to searching for strings they allow us to search for more
+complex patterns 
+
+With REGEXP we dont have to use the % in the string 
+with REGEXP we have additional character that we do not have when we 
+use the LIKE Operator like 
+
+^: indicates the beginning of a string 
+$: represents the end of a string 
+|: used for multiple words (called logical all)
+[]: depending on the location of the brackets the it will look for a combination of the characters inside of the brackets with the ones on the outside 
+[a - z]: can also do range of characters 
+
+Time to take this to the next level 
+Lets say we want to find customers with the last names that include 
+field, mac, and rose 
+
+Another exercise let's say we wanted to find the customers that have
+e in the last name we can use a simple REGEXP 
+
+now lets say that we wanted to find a certian letter before the 
+e?
+we can prefix the string with [] and sql will check each letter with the e to see
+if a customer matches 
+
+We can also supply a range of characters
+so using the [] we can check to see if there are any last names
+with a-h that comes before e
+
+There are plenty more special characters that SQL supports 
+but honesty this the ones we used here are the main ones we will be using 
+
+Exercise:
+-- Get customers whose
+-- First names are ELKA or AMBUR
+-- last names end with EY or ON
+-- last names start with MY or contains SE
+-- last names contain B followed by R or U

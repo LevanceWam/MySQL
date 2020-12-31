@@ -1,0 +1,39 @@
+This is the notes for LIKE Operator
+
+We are going to learn how to retrieve rows to
+match a specific string pattern,
+
+For Example Lets say we only want to get 
+Customers with the last name that starts b
+
+so in the query we are going to use the LIKE operator to help us find the Customers
+that meet these conditions 
+
+Using %:
+
+notice that after the b we have a % 
+this is used to indicate the numbers of charaters after the B 
+so we can have 1 or none or more 
+
+The % doesn't always have to be at the end of the string
+
+Using _:
+by using _ and lets say y so _y
+we are saying that 
+we want to get customers who's name is exactly 2 charaters long
+we do not care what the first charaters is but as long as the second one y
+
+But depending on the amount of _ we have this will check for that amount of characters
+So if we have 5 _ and a y we are going took for names that are 6 characters long and ends in y
+
+Recap:
+%: represents any number of characters 
+_: represents a single character 
+
+LIKE is a little outdated 
+and we have a more powerful operator to search through our strings 
+
+Exercise 
+Get customers whose:
+Address contain trail or AVENUE
+phone numbers end in 9
