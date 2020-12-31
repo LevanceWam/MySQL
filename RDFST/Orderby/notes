@@ -1,0 +1,64 @@
+This is the notes for ORDER BY clause
+
+We are going to learn how to sort data in sql queries
+by default when we call a select from query by default it is going to 
+order them by their ID 
+
+We can change this default sortment by using ORDER BY clause
+The reason for this is because the customer id column is the 
+primary key for this table 
+
+In relational databases every table should have a primary key column 
+and the values in that column should uniquely identify the records in that table
+
+ORDER BY:
+to sort a table by another column we would use the clause 
+so if we wanted to sort the table by the first name 
+Now we can see that the results are not sorted by the ID 
+but by alphabetical acesnding order to do the reverse
+add DESC
+
+we can also sort multiple columns
+so we are going to sort by state and within the state sort by the customers first name 
+we can use the DESC argument anywhere in the statement 
+so we atre going to DESC the state and then sort them by the name 
+
+An important thing to know that makes SQL different from 
+other database management systems is MYSQL 
+can sort any columns whether that column is in 
+the select clause or not
+
+so if we wanted to select the first and last name for the customers 
+now we can sort the result by any columns in this tble 
+so we can sort it by the birthdate
+
+Other database management systems will sometimes yell at us
+when we write a query like this 
+
+We can also sort data by an alias
+again in mysql we can get away with something like this 
+
+One last thing we need to go over
+In certain tutorials show us how to sort data by columns positions 
+we can order by 1 and 2
+this basically means we sort data by the first and last name 
+
+While this approach works its something that we should avoid
+because in the future if edit this query and add another column to the front 
+the customers are no londer sorted in the previous order 
+
+The thing to take away from this is that sorting data by column positions 
+produces unexpected results and is something that we should avoid
+
+try to sort by column names 
+
+-- Exercise:
+-- In the order_items table 
+-- write a query to:
+-- Select all items for order with ID 2
+-- sort by total price (quantity * unit price)
+-- In descending order 
+
+Remember when we are sorting using order by we do not 
+have to use a column name we can use Arithmetic expressions 
+aliases 

@@ -10,6 +10,7 @@ FROM customers
 
 -- ----------------------------------------
 
+-- this returns states without the dups 
 SELECT DISTINCT state 
 FROM customers
 
