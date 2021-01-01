@@ -62,8 +62,13 @@ we noticed that we have used order in multiple places
 same for customer
 we can make this cleaner by using a alias
 
-
 SO right after each table we can give an alias
 I convention we aggregate the tables name
 Whatever we have orders we can replace it with the alias
 same with orders
+
+Exercise:
+write a query to:
+join the order_items table and the product table 
+return the product id and the name 
+followed by the quantity and the unit price 
