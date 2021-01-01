@@ -1,0 +1,15 @@
+This is the notes for Implicit Join syntax
+
+We are going to take a look at the Implicit Join
+syntax in sql
+
+we are starting off with a basic inner join 
+
+Now there is another way to write this query using Implicit join syntax
+all we have to do is call both of the tables next to the FROM clause 
+and instead of using ON we use where
+This behaves just like a basic inner join
+
+But it is suggested that we dont use this because 
+if we forget the WHERE clause this is going to be a cross join 
+
