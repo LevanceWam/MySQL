@@ -1,0 +1,14 @@
+This is the notes for self joins 
+
+in sql we can also join a table with itself 
+
+take a look at the sql_hr db
+we only have 2 tables in here 
+we are going to take the employee table 
+and join it with itself so we can select the name of each 
+employee and their manager
+
+So doing a self join is pretty much the same thing as joining a table with another table 
+the only difference:
+    - have to use different aliases 
+    - we have to prefix each column with a alias 
