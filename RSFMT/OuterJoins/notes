@@ -1,0 +1,56 @@
+This is the notes for Outer Joins 
+
+In sql we have 2 kind of joins INNER and OUTER joins
+So far we have used INNER joins 
+also remember that we said that the inner keyword is optional
+so when we type plain JOIN we are using a INNER JOIN
+
+Now we are going to take a look at OUTER joins 
+and the problems they solve
+
+so we are going ti start with a basic inner then a outer one 
+
+when we look at the records for the inner join 
+we can see that we get a lot of customer_id dups
+but we are missing something from our results
+
+we only see the customers that have a order in the systems 
+but in the customer table we have others that are not listed 
+the reason they did not show up is because they do not have a order
+
+Well what if we wanted to see all of the customers whether they had an order or not 
+this is when we would use a outer join 
+
+The reason why the inner join showed the customers with a order is because of the condition 
+when we joined those 2 tables we are only returning 
+records that match the condition
+so for the given customer if they have a order they will be shown
+so for the other customers that do not have a order they are not valid 
+
+OUTER JOIN:
+In sql we have 2 types of OUTER JOIN
+we have left joins and right joins
+
+LEFT JOIN:
+when we use a left join all of the records from the left table in this case
+the customers are returned whether the condition is true or not 
+this will give us the customers and if they have an order then well see the 
+order id too
+
+now we can see the customers with out a order
+
+RIGHT JOIN:
+when we use a right join all of the records from the order table are returned 
+whether the condition is true or false is returned 
+this gives us all of the records from the order table
+
+Intersting Note:
+some developers will type out the keyword outer 
+but this is optional just like inner 
+
+Exercise:
+Write a query that produces these 3 columns
+product_id 
+name
+quantity
+from the order_items tab
