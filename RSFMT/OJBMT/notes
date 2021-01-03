@@ -1,0 +1,54 @@
+this is the notes for outer joins between multiple tables 
+
+Similar to inner joins we can combine multiple tables 
+using outer joins 
+
+we are using a example from a previous lecture where we were 
+using a left join to get all of the customers that have a 
+order table  whether the condition is true or not 
+
+Looking into the customer table we also see that we have a shipper_id 
+this is the orders that have been shipped 
+now we are going to join the orders table with the shippers table to 
+display the name of the shipper
+and the result 
+
+so first we tried to use a outer and a inner join this is 
+possible 
+but the we didnt recieve all of the records 
+we got some of them 
+so we are going to redo this query using a outer join instead of the inner
+
+now earlier we learned that we can achieve the same results 
+of a join by switching the order of a table 
+
+However, 
+As a best practice we want to avoid using right joins 
+because when we are joining multiple tables 
+and we have left and right and inner joins 
+things can get really complex 
+
+someone else that can look at our code might have a but of 
+trouble visualizing how we are joining these 
+table 
+
+Exercise:
+write a query that produces this result:
+order_date
+order_id
+first_name
+shipper
+status 
+
+we notice that some of the shipper names are null so we are going to need left joins
+the tables we are going to need is:
+customers 
+orders
+shippers
+order_statuses 
+
+Another note is that we are not returning all of the 
+customers so we are using a inner join for customers and orders 
+and we are also ordering it by the order_status name
+
+For a visual look refer to the screenshot
