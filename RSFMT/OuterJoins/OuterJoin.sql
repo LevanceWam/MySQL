@@ -26,3 +26,15 @@ FROM customers c
 RIGHT JOIN orders o
     ON c.customer_id = o.customer_id
 ORDER BY c.customer_id;
+
+-- Exercise:
+-- Write a query that produces these 3 columns
+-- product_id
+-- name
+-- quantity from the order_items table 
+-- so we need to join the products table with order items table
+-- we want all of the products from the products table 
+SELECT p.product_id, p.name, oi.quantity
+FROM products p
+LEFT JOIN order_items oi
+	ON p.product_id = oi.product_id;

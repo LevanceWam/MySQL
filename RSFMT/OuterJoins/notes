@@ -52,5 +52,8 @@ Exercise:
 Write a query that produces these 3 columns
 product_id 
 name
-quantity
-from the order_items tab
+quantity from the order_items table 
+
+so we need to join the products table with order items table 
+-- we want all of the products from the products table 
+even if there is a null somewhere
