@@ -1,0 +1,26 @@
+This is the notes for cross joins 
+
+Lets take a look at cross joins 
+we use cross joins to combine or join every record 
+from the firsr table with every record in the second table 
+
+so all we need to do is write the keyword CROSS followed by JOIN 
+the table and that is all 
+we do not need a condition
+
+now when we execute this query
+we are going to get the customers with a combination of all of the products 
+
+A better example would be if we had a table of sizes
+like small medium and large and a table of colors 
+and we want to combine them
+
+The current syntax we have is the explicit syntax for a cross join
+we also have a implicit one 
+
+the implicit one we just write the tables in the from clause 
+
+Exercise:
+do a cross join between shippers and products
+one implicit
+one explicit
