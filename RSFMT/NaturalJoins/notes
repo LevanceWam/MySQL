@@ -1,0 +1,21 @@
+This is the notes for Natural joins 
+
+In mysql we have another simpler way to join tables 
+it is called a natural join and its easier to code 
+but it is something that is not recommended 
+because sometimes it can produce unexpected results 
+
+But we will take a look just incase we see it somewhere
+
+With natural joins we dont explicitly specify the column names
+so the database on the common columns
+The columns that have the same names and that is
+the reason why this query is  shorted right
+
+so when we execute the query it works 
+coding with natural joins 
+is really easy but they can be really risky
+
+this is because we are letting the database engine figure out or
+guess the join we do not have any control over it
+for this very reason natural joins can produce unexpected results 
