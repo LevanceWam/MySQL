@@ -1,0 +1,44 @@
+This is the notes for USING clause
+
+back in the sql_store database we have a simple 
+query that is joining the orders table and the customers table 
+
+As the queries start to get more complex these conditions get in the way 
+the make the queries hard to read
+
+But, in sql we have a powerful feature 
+that simplifies the queries if the column name 
+is exactly the same across the 2 tables we can replace 
+the ON clause with the USING clause which is simplier and 
+shorter
+
+USING Clause:
+so we write the USING keyword out and place the column inside of parenthesis
+we are going to do the same with the shippers table 
+we can use a left join here so the USING clause 
+works the same with outer joins 
+
+However we cannot use this technique to join the
+result with the order status table because in the order status table 
+we have a column name status but in order status table 
+this column has a different name 
+
+The USING Clause only worka if the column name is the same across different tables 
+
+Now what if there is multiple columns in our joint conditions
+so like with the composite primary key in order items
+so if we want to join this table with order items notes table 
+In the join condition we should compare both of the conditions 
+wih their corresponding columns in the order items notes table 
+
+we are going to attempt this by using the USING keyword
+
+Exercise:
+In the sql_invoicing databae 
+write a query to select the payments from the payments table and produce 
+something like the report in the screenshots
+the table has:
+date 
+client
+amount 
+name (shows payment method name)

@@ -1,0 +1,72 @@
+This is the notes for Unions
+
+In sql we can also combine rows from multiple tables
+this is extremely powerful
+
+we are going to take a look at this 
+so we write a query to get all of the orders
+
+What if we wanted to get all the orders next to eachother and add a label?
+
+if the order is placed in the current year the label is going to be active 
+and if the order was placed in previous years we want ti place it 
+as archive
+
+so we are going to change the query and add a condition
+with this condition we ar getting orders from the current year
+
+so we are going to pick the 2 columns we want and then we are going to use 
+a string literal to label them as active we will call this column status
+
+now we are going to make a query that is going to get the previous years
+so we are going to copy the current query and modify it
+
+but notice that we get a syntax error because we did not terminate the first select
+but we are going to deal with this later 
+now if we execute the query we are going to see that we are going to get 
+more archived than active records 
+
+UNION operator:
+
+Now by using the UNION operator we can combine these 2 queries 
+in between the 2 select statements 
+now when we execute the query we are going to get the active and the archive recorswe 
+
+we can use this operator to combine records from multiple queries
+
+now for this example both of the queries are against the same table 
+but we can also do this against other tables and combine the results 
+in to one result set
+so we are going to attempt that 
+
+As we can see we get all of the customers and shippers in one colun 
+Now there isn't really a real world use case for this particular query at the moment 
+
+put we are going ti point out that with union we can combine result with multiple queries 
+they can be from the same table or different 
+
+but we need to rememeber that the number of columns that each query returns should be equal
+otherwise we are going to get a error 
+
+so if we write a query and the first table is returning 2 columns and the other one 
+is returning 1 mysql doesn't know how to combine these records
+
+One more important information 
+when we look at the customer and shippers union 
+the column is based on the first query so the first query
+returns the first name and thats why this column is called first name 
+
+if we change the order name would be the title of the column 
+so whatever we have in the first query is going to be the name of the columns 
+
+Exercise:
+we need to write a query that is going to produce these columns 
+customer_id, first_name, points, type
+
+type is not going to be in the customers table 
+so we calclated the values in this column based in the points 
+each customer has if they have less than 2000 points then they get bronze
+if they have between 2000 and 3000 silver 
+greater than 3000 gold
+
+they are also sorted by the first name

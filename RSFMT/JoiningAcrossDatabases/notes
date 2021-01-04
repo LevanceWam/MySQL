@@ -1,0 +1,21 @@
+This is the notes for Joining across databases
+
+Ther are going to be times where we are going to have to 
+work with multiple databases
+
+we are going to combine tables across multiple databases
+
+we are going to combine the order_items table 
+with the products table in sql_inventory (Its like the one in sql_store)
+
+Now in order to get the product table after the join clause 
+we are going to call the database and then the table that we want to use 
+
+The reason that we have to prefix the database is because we are currently
+within another database writing this query to get access to it 
+
+Main thing to take from the lesson:
+We only have to prefix the tables that are not 
+apart of the current database 
+
+The query will be different depending on the current db

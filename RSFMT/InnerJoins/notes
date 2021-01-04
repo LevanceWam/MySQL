@@ -1,0 +1,74 @@
+This is the notes for inner joins
+
+So far we have only selected columns from a single table 
+But in the real world we quite often select columns 
+from multiple tables 
+
+We are going to tackle this in the upcoming lectures 
+so to start we are going to learn how to select the orders in the 
+order table but instead of showing the customers  ID we are going to 
+show the full name of the customer 
+
+So we want to select all of the items in the 
+orders table.
+
+Now we want to combine everything from the columns in the orders table 
+to the columns in the customer table 
+This is where the JOIN keyword comes in
+
+JOIN:
+Optionally we can prefix JOIN with INNER 
+because we have 2 kinds of joins in SQL
+INNER and OUTER JOIN
+but it is completely Optional
+
+so were combining the customer table but on what basis?
+well we wnat to line up the records of the customers and the orders
+so we are going to place the 2 tables together by 
+using the ON phrase followed by a condition
+
+This is the condition that we need
+the orders' customer_id should be equal to 
+the customers' customer_id
+
+So basically we are telling MySQL whenever we are joining the orders table with the 
+customers table 
+that the customer_id in the orders table equal the customer_id column 
+in the customers table 
+
+Once we execute this we will see that the first few columns are from the orders table because 
+we listed in first
+then we see the customer tables 
+
+so now we are going to simplify it to only get the orders first and last name 
+this gives us the order id next to the name of the customer 
+
+Now what of we wanted to display the customer ID?
+
+Answer:
+if we just add it to the select statement 
+we are going to get a Ambiguous error
+this is because this column is in both of the tables
+MySQL is confused on which to pick
+
+so we need to prefix the column with the table we are getting it from
+so using dot notation we can choose either or because the values are equal
+
+So in situations where we have the same column in multiple tables we need to 
+prefix them with the name of their table
+
+Detail to pay attention to:
+we noticed that we have used order in multiple places 
+same for customer
+we can make this cleaner by using a alias
+
+SO right after each table we can give an alias
+I convention we aggregate the tables name
+Whatever we have orders we can replace it with the alias
+same with orders
+
+Exercise:
+write a query to:
+join the order_items table and the product table 
+return the product id and the name 
+followed by the quantity and the unit price 

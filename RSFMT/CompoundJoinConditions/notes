@@ -1,0 +1,45 @@
+This is the notes for Compound Join Conditions
+
+Up to this point we have been using a single column to unqiuely indenitfy the rows 
+at the end of a table
+like in the customer table when we use the customer id to unqiuely 
+indenitfy the rows in this table 
+
+But there are going to be times we can not use a single column to unqiuely indenitfy
+records in a given table 
+
+example
+in order_items 
+we can see that the order id column is repeated 
+so we can not use this column by itself to unqiuely
+indenitfy each record  the product id does the same 
+
+so we could use the order_id and the product id 
+to unqiuely indenitfy each order item
+
+Now we are going to open up design mode for order_items
+(The little wrench icon)
+note that the yellow key represents the primary key exist 
+on both of the columns
+This is what we call a composite primary key
+
+Composite primary key
+composite primary key takes more then one column
+why does this matter?
+well when we have a table 
+with a composite primary key 
+we have to learn how to join that table with another table 
+
+for example  in the order item notes table 
+the column note_id unqiuely indenitfies the records in this 
+table, next to that we have order id and product id
+we know that these 2 columns unqiuely represents an order id
+
+now we are going to join this table with ans order items table 
+In sql_store
+
+so we start by making a basic join to the order_id column
+once this is done this is still not enough 
+we need to make another Condition because this is a composite primary key
+this is what we call a compound join Condition
+we have multiple conditions to join the 2 tables 

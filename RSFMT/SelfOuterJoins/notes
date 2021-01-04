@@ -1,0 +1,14 @@
+This is the notes for Self Outer Joins
+
+earlier when we were talking about self joins 
+we were working in the sql_hr database and we 
+returned the manager that the employees reported to 
+
+So we are going to work with these records again 
+so we rewrite the old self join 
+
+Now we are going to notice that we have something missing 
+we sont have a record for the manager 
+this is because of the inner join 
+
+So we fix this with a left join 

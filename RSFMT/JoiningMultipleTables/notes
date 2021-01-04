@@ -1,0 +1,35 @@
+This is the notes for joining multiple tables 
+
+Going to take a look at joining multiple tables 
+when a query
+
+back in the sql_store DB
+we now know how to join the order with the customers table to 
+return info about a customer 
+but we also have another column called status which is similar to the customer ID 
+column
+
+these status aere stored eslewhere and we want to get them
+so if we look to order_statuses table 
+we will see what status are 
+
+Now we are going to want to write a query to join the 
+orders table with 2 tables the customer and order_statuses
+
+So first we write a normal join for combining 2 tables 
+Now to add another table we can use another join
+
+now in the real worls we are going ti be working on moree complex problems
+that could require us to join 10 tables  
+
+Exercise:
+
+Inside of the sql invoicing database
+we have a payments table that keeps track of clients payments toward a invoice
+looking at the data we can see that there is a client id  this identifies the client so we canconnect this table 
+next invoice id etc
+
+Our task is to write a query to join the payment table to
+to the payment_method and client table 
+
+we need a report that shows the name of the client payment method and the payments 
