@@ -1,6 +1,6 @@
 -- inserting a new row into customers
 -- because we have auto increment on we do not need to set the customer id
--- by using values we can set the value for each column in the table
+-- by using values we can set the value for each column in the table;
 INSERT INTO customers
 VALUES(
     DEFAULT, 
