@@ -23,3 +23,7 @@ Now lets say that we updated the wrong invoice number
 so we should update the table one more time and restore the record that we changed
 
 so we need to undo invoice_id 1 and update invoice_id 3
+
+
+when we execute the query the payment total is going to be truncated 
+we are going to talk more about this is data types
