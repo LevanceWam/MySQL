@@ -1,0 +1,8 @@
+We are going to resotore the database to its original state
+
+in sql at the top panel we need to find open sql script in the file menu
+navigate to where we have the sql scripts for this cousre
+
+open create-database.sql
+ then execute the script
+ 
