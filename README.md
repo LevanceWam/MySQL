@@ -80,7 +80,7 @@ If we so happen to forget the password for our root and we can't get in, or set 
 
 * [Retrieving Data From a Single Table](https://github.com/LevanceWam/MySQL/tree/main/RDFST)
 * [Retrieving Data From Multiple Table](https://github.com/LevanceWam/MySQL/tree/main/RSFMT)
-* [Inserting, Updating, and Deleting Data]()
+* [Inserting, Updating, and Deleting Data](https://github.com/LevanceWam/MySQL/tree/main/IUDD)
 * [Summarizing Data]()
 * [Writing Complex Query]()
 * [Essential MySQL Functions]()
