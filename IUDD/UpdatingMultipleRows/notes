@@ -1,0 +1,41 @@
+this is the notes for updating multiple rows
+
+In the last lecture we learned how to update a single row
+to update multiple rows we do the same thing  
+but the condition we type out usng the where clause has to be
+more general
+
+for example in the invoices table  we can see that we have multiple 
+invoices for client number 3 
+
+we can write a statement to update all of the invoices for this client 
+
+however if we execute this statement with mysql workbench
+we are going to get an error.
+this is because by default mysql workbench is in the safe update mode 
+so it only allows us to update a single record
+
+this problem will go away if we use another client from mysql workbench
+or if we write this statement in the application code 
+this is only specific to mysql workbench
+
+So lets see how to get around this 
+
+In the preferences of sql workbench
+untick the last option at the bottom of the menu
+this prevents us from accidently updating or deleting 
+a bunch of records in a table 
+
+now we need to reconnect to this instance of sql
+now we can execute the query
+
+we can also use the IN operator to get multiple clients
+and by the way we can use all of the operators that can be used with the where clause
+
+also the where clause is optional so if we wanted to update all of the 
+records in the table we just leave it out 
+
+Exercise:
+Write a SQL statement to:
+give any customer born before 1990
+50 extra points
