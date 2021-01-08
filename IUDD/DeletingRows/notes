@@ -1,0 +1,16 @@
+This is the notes for Deleting rows
+
+Lets take a look at deleting data
+We use the DELETE FROM statement  
+
+DELETE FROM:
+used to delete records from a table 
+We can optionally use a search condition to 
+find the records that we want 
+
+if we do not write the where clause this will delete all of 
+records from the table selected
+
+we can also use subqueries in this delete statement 
+so if we wanted to delete all of the invoices for Myworks
+we should find the client
