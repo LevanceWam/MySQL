@@ -1,0 +1,60 @@
+This is the notes for Using Subqueries in Updates
+
+We are going to use a update query in a update statement 
+so going off of the last example from the prevoius lecture
+
+lets say we didnt have the id of the client 
+but we had the name 
+
+for example we have a application where the user only types in the name of the
+client
+this is going to make us find the id for that client
+then we are going to use that to find the id and update all of the invoices
+
+How can we approach this?
+IN the clients table 
+we are going to pick the name and find the id
+we are going to write a select statement to return the id
+
+Now we can use this SELECT statement as a subquery
+remember a subquery is a SELECT statement that is used within another SQL statement
+
+so instead of hard coding the 3 we are going to use the select statement as a subquery
+but this is important we have to wrap the SELECT statement in parenthesis 
+so MySQL will execute this query first
+
+we will get the client id first and then use it in the condition
+
+Now what if this query returned multiple clients
+in the clients table 
+what if we wanted to update all the invoices for all of the clients 
+located in new york or california
+
+since the subquery is returning multople records we can not use the equal sign anymore 
+it needs to be replace with the in operator
+
+as a best practice always check to see what records the subquery is going to update
+this stops us from accidently updating records that shouldnt be updated
+
+in the current example we are using a subquery to update the records
+but even if we didnt have a subquery we can still
+query the records
+lets test this out  
+
+so lets say we want to update the invoices where the payment dates are null 
+before executing the entire update statement 
+we should run the query that returns the result that we want
+
+once we know that the query is the one we are looking for we can just use the where clause and the 
+update statement 
+
+Exercise:
+In sql_store database
+in the orders table 
+some of the orders dont have a comment 
+
+write a SQL statement to:
+update the comments for orders of customers more than 3000
+customers that have more than 3000 regard them as gold customers 
+find the order if they have placed an order 
+update the comments column and set it to gold customer

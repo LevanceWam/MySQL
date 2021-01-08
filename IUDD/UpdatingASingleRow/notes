@@ -1,0 +1,29 @@
+This is the notes for Updating a Single Row
+
+We are going to update some data in sql
+in invoices we can see that the payment total for the 
+first record is 0 and there is no payment date
+
+lets say that the client made a payment for this invoice so we should update 
+this record in the table
+
+UPDATE:
+This is a job for the update statement 
+this statement will update one or more records in a table 
+
+so we call the table that we want and then use the SET clause
+SET:
+this is where we specify the value for one or more columns 
+after we choose which columns to update and to update multiple columns we seperate columns 
+with comas (,)
+
+then we use the where statement to choose which record we want to apply the update to
+
+Now lets say that we updated the wrong invoice number
+so we should update the table one more time and restore the record that we changed
+
+so we need to undo invoice_id 1 and update invoice_id 3
+
+
+when we execute the query the payment total is going to be truncated 
+we are going to talk more about this is data types

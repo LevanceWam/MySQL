@@ -1,0 +1,79 @@
+this is the notes for creating a copy of a table 
+
+Lets try copying data from one table to another 
+heres an example 
+in the orders table currently we have about a dozen records
+and we want to copy this table and we want to insert every row
+that we have into the new table 
+
+we are going to use a powerful techinque to quickly copy 
+data from one table to another 
+
+first we need to create the new table
+this is where we use the CREATE TABLE statement 
+
+CREATE TABLE:
+after the create statement we are going to select everything from the 
+orders table 
+
+now when we execute the query we can see that a new table 
+was created and it has the exact same columns as the order table 
+
+but if we open this in design mode 
+we notice that we do not have a primary key
+so the order id column is not marked as a primary key 
+and it is not marked as a auto increment column 
+
+so when we create a table using this technique sql will 
+ignore these attributes and that means if we want to 
+explicitly insert a record into this new table 
+have to supply a value or order id 
+
+because this column is no longer an auto increment column 
+okay so using the CREATE TABLE _____ AS statement quickly creates a copy of a table 
+
+the select statement is referred to as a sub query 
+
+Sub Query:
+is a select statement that is part of another sql statement
+we can use a sub query in a insert statement and that is a powerful techinque
+
+Lets try it out
+first we need to truncate table this is going to delete all of the data in the table 
+this is faster than a regular delete (interview question)
+
+now if we wanted to copy a subset of records from the 
+orders table into this table 
+
+like all of the orders placed before 2019
+so we write a simple query to get all of the 
+records before 2019 
+once we have that above the query we put the insert statement 
+we are not going to supply values for the columns 
+because we are copying it over 
+
+Exercise:
+In sql_invoicing 
+in the invoices table 
+we have the columns:
+invoice_id
+number 
+client_id which is related to the client table followed by some other columns 
+
+so lets say we want to make a copy of this table 
+into a new table called archive 
+however instead of the client id column we want to have the 
+name column 
+
+we are going to have to join this table with the clients table then 
+use the query as a subquery in a create table statement 
+and we only want to copy the invoices that have a have a payment 
+
+Breakdown:
+Use create table called invoice_archive using a  subquery
+join the invoices and client table 
+only copy the invoices with a payment 
+get the client name column instead of the client id 
+
+as a quick note!
+if we try to execute a table that is already created we are going to get a error

@@ -1,0 +1,51 @@
+This is the notes for  Column attributes
+
+In this section we are going to learn how to insert update and delete data
+but before we do that we are going to take a closer look at the customer table
+
+so we are open it in design mode which we can do by clicking the wrench
+by the table 
+
+On the left we have the column name 
+
+next is the datatype for each column 
+so things like the customer_id column can only accept intergers 
+intergers are whole numbers no decimals
+
+first_name is a varchar which is short for 
+variable character in the parenthesis next to it is the maximum amount of 
+characters but we do not have to use all of it 
+
+we do have another datatype called character
+it the maximum was 50 and we only had 5 characters
+mysql will insert an additional 45 spaces to fill the column 
+
+so as best practice use var char
+
+to the right of the datatypes column 
+we can see pk which is short for primary key 
+so we can see that customer_id is marked with a primary key and that is why 
+it has the yellow key next to it 
+so the values in this column unqiuely identify each customer 
+
+next to that we have nn which is short for not null 
+and this determines if this column can accept 
+null values or not so in this cases every customer record must have a customer_id 
+first_name and so on. but birthdate and phone are optional
+in these columns we can have null values 
+
+we have another column which is called ai which is short for auto increment 
+and this is often used with primary key columns 
+so everytime we insert a new record in the table we let 
+mysql or our database engine insert a value in this column
+so it essentially get the customer id for the last row 
+and it will increment it by 1 at the time we insert a new record
+
+so if we were to add another customer to the table mysql will asign 11 to the 
+new customer 
+
+the last column is where we can specify the default value for each column 
+so for birthdate and phone columns will be null if we do not supply a value 
+we also have one for points it will be set to zero if  we do not supply anything 
+
+we will look into the other columns at a later time 

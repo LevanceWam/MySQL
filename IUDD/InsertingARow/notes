@@ -1,0 +1,51 @@
+This is the notes for Inserting a Row 
+
+Lets try inserting a row into a table 
+for that we are going to use the 
+INSERT INTO statement
+
+INSERT INTO:
+where are we going to insert the row 
+in to a table of our choice 
+followed by the values clause 
+in the parenthesis we supply the values for 
+every column in this table 
+
+so if we take a look at the table definiton 
+first we need to supply the value for 
+customer_id column 
+but remember that the auto increment is enabled so we don't supply 
+a value mysql will generate a unique value for us 
+
+so in the value parenthesis we can supply it with DEFAULT and it will generate the customer_id
+now this is a best practice because if we where to set a explicit value 
+it is possible we may have another customer with the same id 
+and we can get a error we can not have duplicate values in this column 
+
+after that we need to supply a value for the first name  and last name
+note that we have to use strings when it comes to names and dates with ' or "
+
+next birthdate which is optional or we can use a explicit value
+
+NULL means the absence of a value 
+
+next is phone  where this is another optional column so we can set NULL here
+or use the DEFAULT which is also NULL
+
+we then go to fill in the rest of the columns 
+
+However in this example we are only supplying values for 
+first and last name, birthdate, and the address fields
+so we are missing the phone, id, and points 
+
+so there is another way to write this statement
+
+so after the table name we can optionally supply the list of columns that
+we want to insert values into 
+
+in this case all of the columns we provided values for earlier 
+
+now when we execute the query 
+we can check the action  output and see that a record was added into the table 
+and when we look at the customer table the new customer is there and sql added the id for us
+by incrementing the id from the last customer 

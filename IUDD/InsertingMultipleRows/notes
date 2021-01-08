@@ -1,0 +1,25 @@
+This is the notes for inserting multiple rows
+
+Lets try to insert multiple rows in one go
+for this demo we are going to use the shippers table 
+
+so for this table's definition we have 2 columns id and name 
+shipper id is primary and canot be null it can be auto incremented
+
+then there is name it can not be null
+
+to insert multiple rows all we have to do is 
+write the insert query like we did earlier and then
+we use a coma and another parenthesis to add another value 
+
+now we can execute the query ans see that the new 
+records have been added and their ids were added for us
+
+Exercise:
+We are going to write a statement to:
+Insert 3 rows in the product table 
+
+interesting note!
+if we were to delete records we made and insert them again 
+they wouldn't have the same ids 
+mysql remembers the last stored id and increments from there

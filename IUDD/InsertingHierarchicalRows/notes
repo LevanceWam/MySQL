@@ -1,0 +1,49 @@
+this is the notes for  Inserting Hierarchical rows
+
+Now we are going to tackle inserting data into multiple tables
+looking at the orders table we take a look at its column
+and we notice that the items are not in this table
+
+they are in the order item table 
+this column has 4 tables the order id the product id
+quantity and price 
+
+so the actual order can have 1 or more order items 
+this is what we call a parent child relationship
+
+Parent child relationship:
+so for this relationship the order table is the parent 
+and the order item table is the child
+
+so one row in the orders table can have one or more children inside of the 
+order items table
+
+now we aer going to take a look at how to insert an order in all these items so we 
+are going to insert data into multiple tables 
+
+
+when creating this order we need to make sure that the customer_id and the status 
+match one of the records in the table sql will yell at us otherwise 
+
+now that we inserted the order we need to insert the items 
+but there is a interesting part 
+
+As soon as we insert an order, mysql is going to generate 
+an id for the new order we are going to need to access that id
+in order to insert the items in this table 
+
+this is how we do that 
+in mysql we have a bunch of built-in functions 
+in sql a function is a piece of code we can use 
+the function we are going to use is called LAST_INSERT_ID
+
+we can call or execute this function by adding parenthesis next to it 
+this returns the id the mysql generates when we insert a new row
+
+now we are going to use this function to insert the childs records 
+so we write another insert statement for order_items 
+since all of the columns are required we do not need to 
+explictly pick any
+
+next we add the values clause and for the order id we place the LAST_INSERT_ID function
+to get the value 
