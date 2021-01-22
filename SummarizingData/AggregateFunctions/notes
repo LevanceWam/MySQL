@@ -1,0 +1,91 @@
+This is the notes for Aggregate functions 
+
+In this section we are going to write queries that summarize data
+as a example we are going to learn how to write queries
+that report sales by clients or state
+
+this way we can see how much we sold in each different state
+
+*These are the answers to some common questions that businesses ask*
+
+this section is very useful for if we are working in a organization 
+with lots of data every single day we are going to write queries to summarize data
+
+first thing we need to understand is how to use Aggregate functions 
+in sql
+
+##Aggregate functions:
+remember that MySQL comes with a lot of built in functions 
+some of these functions are called Aggregate functions because they take a series of values 
+and Aggregate them to produce a single value
+
+for example 
+    - MAX():
+        this calculates the maximum in a series of values
+    - MIN()
+    - AVG() *average
+    - SUM():
+        for calculating the total
+    - COUNT()
+
+with these functions we need to add the () to call or 
+execute them 
+
+we are working in the sql_invoicing database
+we are going to return a record that is the maximum from a table 
+
+now look at the name of the column it is set to 
+the name of the select statement we used 
+so we are going to rename it 
+
+we can also get the min from this table
+and the average 
+
+now so far we have been using this on a numerical column 
+but we can use them on dates and strings 
+
+*important*
+These Aggregate functions only operate on non null values 
+so if we have a null value it is not going to be included in these functions
+lets see where this matters
+
+in payment_date this column accepts null values when we execute this 
+query we get 15 because not all of the invoices has been paid 
+so we only got the records that do not have null 
+
+now if we wanted to get the total amount of records regardless if they are null 
+we just use a *
+
+Another thing we can do is add the column name in expressions 
+so in the sum function we just wrote 
+this MySQL is going to mulitply all of the records by 1.1 and then apply the SUM function
+
+if we were to add a filter here 
+these functions calculate the summary values for records that match the 
+search criteria
+
+*important*
+by default these functions take dupilcate values if we want to exclude them we need to use the 
+distinct keyword
+
+##Exercise:
+Write a query against the invoice table to generate the report we have in the screenshot
+
+we have 4 columns 
+    - date_range
+    - total_sales
+    - total_payments
+    - what_we_expect
+
+what_we_expect = total_sales - total_payments
+
+in this table we have 3 records 
+first we see all the amounts for the first half of 2019
+then the second half and the total
+
+*IMPORTANT PLEASE READ*
+the screenshot provided is from my machine not from the lesson
+the values are different and we are working with what we got 
+the end result is the same just different numbers 
+
+what matters is that we got the query right
