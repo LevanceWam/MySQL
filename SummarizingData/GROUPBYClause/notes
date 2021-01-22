@@ -1,0 +1,63 @@
+this is the notes for GROUP BY Clause
+
+in the last lecture we learned about aggeragate functions 
+so we have a sum function that is returning the sum
+of the records from the invoice_total column 
+
+Now whay if we wanted to get the total sales per client 
+This is where we need to group data by one or more columns
+
+##GROUP BY:
+So this is how this works
+right after the FROM clause we use the 
+GROUP BY clause and we type out one or more columns for grouping data
+so we are going to groupn this by the client_id
+now we cant see the client_id so we will add it next to the select clause
+
+###Sorting the columns:
+now by default data is sorted by the column specificed in our GROUP BY clause
+but we can change the sort order using an order by clause
+
+###filtering data:
+we can apply a filter before grouping our data
+so if we want to calculate the total sales by each client but for the second half of the year
+we would use the where clause 
+
+*important*
+before we move on to grouping by multiple tables 
+we need to pay attention to the order of the clauses
+this is the current order
+SELECT
+FROM
+WHERE
+GROUP BY
+ORDER BY
+
+GROUP BY always comes after the from and where clause and before the ORDER BY
+
+##GROUPING BY multiple tables 
+first we are going to join the invoices table with the client table 
+now we are going to see the sales by state and city
+
+since we are grouping by multiple columns 
+we can see the total sales for each state 
+and city combonation
+
+so when we use multiple columns using the group by clause
+we get one record for each city and state combonation
+
+now in this example our data set we don't have 
+nultiple cities per state 
+but we are going to see that as part of the exercise
+
+exercise:
+we need to write a query that generates the screenshot report
+we have 3 columns:
+date
+payment_method
+total_payments
+
+write this query against the payment table 
+
+
+
